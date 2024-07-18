@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/index")
+@RequestMapping(value = "/")
 public class EndpointController {
-    @GetMapping
+    @GetMapping(value = "index")
     public String index() {
         return "index";
     }
