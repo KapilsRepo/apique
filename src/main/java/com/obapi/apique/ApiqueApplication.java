@@ -11,7 +11,6 @@ public class ApiqueApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ApiqueApplication.class, args);
 		System.out.println("Apique Application Started");
-
 	}
 
 }

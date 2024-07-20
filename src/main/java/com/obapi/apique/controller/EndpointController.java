@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping(value = "/")
 public class EndpointController {
-    @GetMapping(value = "index")
-    public String index() {
+
+    @GetMapping(value = "home")
+    public String home() {
         return "index";
     }
 }
