@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>APIQUE</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <meta name="color-scheme" content="dark light">
+    <meta name="supported-color-schemes" content="dark light">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" th:href="@{/styles/index.css}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+<header class="mb-5">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-0">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" th:href='@{/home}'><em> APIQUE </em>Banking</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href='@{/login}'>Personal</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Professional</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Service Professionals</a></li>
+                            <li><a class="dropdown-item" href="#">Digital Content Professionals</a></li>
+                            <li><a class="dropdown-item" href="#">Creative Content Professionals</a></li>
+                            <li><a class="dropdown-item" href="#">Sports Professionals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Premier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Junior</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="container-fluid mt-0px-0 w-100">
+    <div class="container-fluid px-0">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-0 bg-light">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-3 text-white min-vh-100">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Personal Banking</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-1">
+                                <i class="bi bi-bank"></i> <span class="ms-2 d-none d-sm-inline">Customer Relationship</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link align-middle px-1">
+                                <i class="bi bi-arrow-right-square-fill"> </i> <span class="ms-2 d-none d-sm-inline">Open/Close Account</span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-1 align-middle">
+                                <i class="bi bi-calculator-fill"></i><span class="px-2 ms-2 d-none d-sm-inline">Transact Account</span> </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-1 align-middle">
+                                <i class="bi bi-check2-square"></i><span class="px-2 ms-2 d-none d-sm-inline">Enquire Account</span> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col py-3">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card bg-info bg-gradient">
+                            <div class="card-body">
+                                <h1>Mr Joe</h1>
+                                <p class="card-text">
+                                    lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus.
+                                </p>
+                                <p class="card-text">
+                                    lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="container mt-5">
+                                    <div class="badge-container">
+                                        <h5 class="card-title position-relative">Wallet
+                                            <i class="fas fa-ball fa-2x"></i>
+                                            <span class="position-absolute top-0 start-100 translate-middle badge square-badge bg-danger">
+                                            3
+                                        </span>
+                                        </h5>
+
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    <span class="badge bg-primary">Fuel</span>
+                                    <span class="badge bg-success">Education</span>
+                                    <span class="badge bg-danger">Food</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="container-fluid mt-5" style="margin: 5px; padding: 5px;">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Wallet</th>
+                            <th scope="col">Balance</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Fuel</td>
+                            <td>$1,500</td>
+                            <td>11 May 2023</td>
+                            <td><a href="#" class="btn btn-primary">Send</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Education</td>
+                            <td>$4,500</td>
+                            <td>10 May 2023</td>
+                            <td><a href="#" class="btn btn-primary">Send</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Food</td>
+                            <td>$1,500</td>
+                            <td>11 May 2023</td>
+                            <td><a href="#" class="btn btn-primary">Send</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="mt-auto">
+    <div class="footer-copyright text-center py-3 bg-dark text-white text-muted small font-weight-light text-uppercase light">
+        Copyright © 2024 APIQUE</div>
+</footer>
+
+</body>
+</html>
